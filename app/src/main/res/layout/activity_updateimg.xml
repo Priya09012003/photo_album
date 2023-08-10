@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateimg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <ImageView
+        android:id="@+id/updateimg"
+        android:layout_width="252dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="52dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateimg">
+
+        <EditText
+            android:id="@+id/edtitleupdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/txtbg"
+            android:ems="10"
+            android:hint="Add Text"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="#100808"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edDescriptionupdate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/txtbg"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Add  Note"
+            android:inputType="textMultiLine"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#221212"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="225dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Update"
+            android:textSize="30sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
